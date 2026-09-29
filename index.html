@@ -6,6 +6,8 @@
 <title>キャンパスギア｜大学生のPC・ガジェット・デザインのメモ</title>
 <meta name="description" content="PCやガジェット、デザインが好きな大学生が、パソコン選びや便利な使い方、デザインのことを書いているブログです。">
 <link rel="canonical" href="https://sei627appple.github.io/campus-gear/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="キャンパスギア">
 <meta property="og:description" content="PCやガジェット、デザインが好きな大学生が、パソコン選びや便利な使い方、デザインのことを書いているブログです。">
 <meta property="og:type" content="website">
@@ -17,82 +19,111 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">本文へスキップ</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="">キャンパスギア</a>
-    <nav><a href="">記事一覧</a><a href="about.html">このブログについて</a></nav>
+    <a class="brand" href="" aria-label="キャンパスギア トップへ"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#161616"/><path fill="#fff" fill-rule="evenodd" d="M23.23 13.65 L25.96 13.81 L25.96 18.19 L23.23 18.35 L22.77 19.45 L24.59 21.50 L21.50 24.59 L19.45 22.77 L18.35 23.23 L18.19 25.96 L13.81 25.96 L13.65 23.23 L12.55 22.77 L10.50 24.59 L7.41 21.50 L9.23 19.45 L8.77 18.35 L6.04 18.19 L6.04 13.81 L8.77 13.65 L9.23 12.55 L7.41 10.50 L10.50 7.41 L12.55 9.23 L13.65 8.77 L13.81 6.04 L18.19 6.04 L18.35 8.77 L19.45 9.23 L21.50 7.41 L24.59 10.50 L22.77 12.55 Z M20.20 16 A4.2 4.2 0 1 0 11.80 16 A4.2 4.2 0 1 0 20.20 16 Z"/><circle cx="16" cy="16" r="2.2" fill="#f5c400"/></svg><span class="brand-text"><span class="brand-ja">キャンパスギア</span><span class="brand-en">CAMPUS GEAR</span></span></a>
+    <nav class="site-nav" aria-label="メインメニュー"><a class="nav-home" href="" aria-current="page">記事一覧</a><a href="about.html">このブログについて</a></nav>
   </div>
 </header>
 
-<main>
+<main id="main">
 <div class="wrap">
-  <p class="intro">PCやガジェット、デザインが好きな大学生のブログです。大学生活で役に立ちそうなパソコンの使い方や選び方を、調べたことも含めて書いています。</p>
+  <div class="hero">
+    <h1>大学生のPC・ガジェット・デザインのメモ</h1>
+    <p>パソコンの選び方や便利な使い方、レポートや発表で使えるちょっとしたコツを書いています。</p>
+  </div>
+  <div class="tools">
+    <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="search" placeholder="記事をさがす（例：PDF、バックアップ）" aria-label="記事を検索"></label>
+    <div class="chips" role="group" aria-label="カテゴリで絞り込み"><button class="chip" type="button" data-cat="" aria-pressed="true">すべて<span class="n">11</span></button><button class="chip" type="button" data-cat="PC選び" aria-pressed="false">PC選び<span class="n">1</span></button><button class="chip" type="button" data-cat="Mac" aria-pressed="false">Mac<span class="n">2</span></button><button class="chip" type="button" data-cat="PCトラブル" aria-pressed="false">PCトラブル<span class="n">2</span></button><button class="chip" type="button" data-cat="ガジェット" aria-pressed="false">ガジェット<span class="n">1</span></button><button class="chip" type="button" data-cat="デザイン" aria-pressed="false">デザイン<span class="n">2</span></button><button class="chip" type="button" data-cat="大学生活" aria-pressed="false">大学生活<span class="n">3</span></button></div>
+  </div>
+  <p class="result-count" aria-live="polite"></p>
   <ul class="post-list">
-    <li><a href="posts/pc-backup-guide.html">
-      <div class="date">2026.09.30　PCトラブル</div>
+    <li data-cat="PCトラブル" data-text="卒論が消えないように、パソコンのバックアップを設定しておく パソコンはある日突然動かなくなります。一度設定しておけば、あとはほぼ自動でデータを守ってくれる方法を書きました。 pcトラブル"><a href="posts/pc-backup-guide.html">
+      <div class="post-meta"><span class="tag">PCトラブル</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">卒論が消えないように、パソコンのバックアップを設定しておく</div>
       <p class="excerpt">パソコンはある日突然動かなくなります。一度設定しておけば、あとはほぼ自動でデータを守ってくれる方法を書きました。</p>
     </a></li>
-    <li><a href="posts/pc-accessories.html">
-      <div class="date">2026.09.30　ガジェット</div>
+    <li data-cat="ガジェット" data-text="ノートパソコンを買ったら、一緒にそろえたいもの 最初に買うならpcケース。そのあとは、使っていて不便に感じたものから少しずつそろえれば十分です。 ガジェット"><a href="posts/pc-accessories.html">
+      <div class="post-meta"><span class="tag">ガジェット</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">ノートパソコンを買ったら、一緒にそろえたいもの</div>
       <p class="excerpt">最初に買うならPCケース。そのあとは、使っていて不便に感じたものから少しずつそろえれば十分です。</p>
     </a></li>
-    <li><a href="posts/student-discounts.html">
-      <div class="date">2026.09.30　大学生活</div>
+    <li data-cat="大学生活" data-text="学生のうちに使っておきたい無料プランと学割 大学のメールアドレスがあるだけで無料になるサービスは意外と多いです。まずは大学が契約しているものから確認するのがおすすめ。 大学生活"><a href="posts/student-discounts.html">
+      <div class="post-meta"><span class="tag">大学生活</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">学生のうちに使っておきたい無料プランと学割</div>
       <p class="excerpt">大学のメールアドレスがあるだけで無料になるサービスは意外と多いです。まずは大学が契約しているものから確認するのがおすすめ。</p>
     </a></li>
-    <li><a href="posts/cloud-storage-guide.html">
-      <div class="date">2026.09.30　大学生活</div>
+    <li data-cat="大学生活" data-text="googleドライブ、onedrive、icloud。大学生はどう使い分けるか 大学のアカウントで使える容量をまず確認。ただ、大学のアカウントは卒業すると消えるので、個人のデータとは分けておくのがおすすめです。 大学生活"><a href="posts/cloud-storage-guide.html">
+      <div class="post-meta"><span class="tag">大学生活</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">Googleドライブ、OneDrive、iCloud。大学生はどう使い分けるか</div>
       <p class="excerpt">大学のアカウントで使える容量をまず確認。ただ、大学のアカウントは卒業すると消えるので、個人のデータとは分けておくのがおすすめです。</p>
     </a></li>
-    <li><a href="posts/pc-slow-fix.html">
-      <div class="date">2026.09.30　PCトラブル</div>
+    <li data-cat="PCトラブル" data-text="パソコンが急に重くなったとき、まず試すこと まずは再起動。それでもだめなら、重いアプリ、ブラウザのタブ、空き容量……と順番に見ていけば、たいていどこかに原因があります。 pcトラブル"><a href="posts/pc-slow-fix.html">
+      <div class="post-meta"><span class="tag">PCトラブル</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">パソコンが急に重くなったとき、まず試すこと</div>
       <p class="excerpt">まずは再起動。それでもだめなら、重いアプリ、ブラウザのタブ、空き容量……と順番に見ていけば、たいていどこかに原因があります。</p>
     </a></li>
-    <li><a href="posts/word-report-tips.html">
-      <div class="date">2026.09.30　大学生活</div>
+    <li data-cat="大学生活" data-text="卒論を書く前に知っておきたいwordの機能 目次やページ番号を手で打っているなら、見出しスタイルを使うだけでかなり楽になります。長い文章ほど最初の設定が大事です。 大学生活"><a href="posts/word-report-tips.html">
+      <div class="post-meta"><span class="tag">大学生活</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">卒論を書く前に知っておきたいWordの機能</div>
       <p class="excerpt">目次やページ番号を手で打っているなら、見出しスタイルを使うだけでかなり楽になります。長い文章ほど最初の設定が大事です。</p>
     </a></li>
-    <li><a href="posts/presentation-design-basics.html">
-      <div class="date">2026.09.30　デザイン</div>
+    <li data-cat="デザイン" data-text="ゼミ発表のスライドを見やすくするための基本 センスはあまり関係なくて、いくつかのルールを守るだけで見やすさはかなり変わります。フォント、色、余白、揃えの話です。 デザイン"><a href="posts/presentation-design-basics.html">
+      <div class="post-meta"><span class="tag">デザイン</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">ゼミ発表のスライドを見やすくするための基本</div>
       <p class="excerpt">センスはあまり関係なくて、いくつかのルールを守るだけで見やすさはかなり変わります。フォント、色、余白、揃えの話です。</p>
     </a></li>
-    <li><a href="posts/free-design-tools.html">
-      <div class="date">2026.09.30　デザイン</div>
+    <li data-cat="デザイン" data-text="無料で使えるデザインツール、何に使うかで選ぶ canva、figma、affinity、gimp、blender……。無料でもかなりのことができるので、作りたいものから逆算して選ぶのがいいと思います。 デザイン"><a href="posts/free-design-tools.html">
+      <div class="post-meta"><span class="tag">デザイン</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">無料で使えるデザインツール、何に使うかで選ぶ</div>
       <p class="excerpt">Canva、Figma、Affinity、GIMP、Blender……。無料でもかなりのことができるので、作りたいものから逆算して選ぶのがいいと思います。</p>
     </a></li>
-    <li><a href="posts/mac-screenshot-pdf.html">
-      <div class="date">2026.09.30　Mac</div>
+    <li data-cat="Mac" data-text="macのプレビューでpdfの結合や圧縮はだいたいできる 課題の提出で「pdfを1つにまとめて」「〇mb以内で」と言われたとき、macなら追加のアプリはいりません。 mac"><a href="posts/mac-screenshot-pdf.html">
+      <div class="post-meta"><span class="tag">Mac</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">MacのプレビューでPDFの結合や圧縮はだいたいできる</div>
       <p class="excerpt">課題の提出で「PDFを1つにまとめて」「〇MB以内で」と言われたとき、Macなら追加のアプリはいりません。</p>
     </a></li>
-    <li><a href="posts/mac-shortcuts.html">
-      <div class="date">2026.09.30　Mac</div>
+    <li data-cat="Mac" data-text="macでレポートを書くときに覚えておくと楽なショートカット 全部覚える必要はなくて、よく使う操作から少しずつ。レポートや調べもので出番の多いショートカットを場面ごとに並べました。 mac"><a href="posts/mac-shortcuts.html">
+      <div class="post-meta"><span class="tag">Mac</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">Macでレポートを書くときに覚えておくと楽なショートカット</div>
       <p class="excerpt">全部覚える必要はなくて、よく使う操作から少しずつ。レポートや調べもので出番の多いショートカットを場面ごとに並べました。</p>
     </a></li>
-    <li><a href="posts/university-laptop-guide.html">
-      <div class="date">2026.09.30　PC選び</div>
+    <li data-cat="PC選び" data-text="大学生のノートパソコン選び、スペックはどこを見ればいいのか メモリは16gb、ストレージは512gb。迷ったときに私が基準にしている考え方と、買う前に確認しておきたいことを書きました。 pc選び"><a href="posts/university-laptop-guide.html">
+      <div class="post-meta"><span class="tag">PC選び</span><time datetime="2026-09-30">2026.09.30</time></div>
       <div class="title">大学生のノートパソコン選び、スペックはどこを見ればいいのか</div>
       <p class="excerpt">メモリは16GB、ストレージは512GB。迷ったときに私が基準にしている考え方と、買う前に確認しておきたいことを書きました。</p>
     </a></li>
   </ul>
+  <p class="empty" hidden>条件に合う記事が見つかりませんでした。</p>
 </div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href=""><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#161616"/><path fill="#fff" fill-rule="evenodd" d="M23.23 13.65 L25.96 13.81 L25.96 18.19 L23.23 18.35 L22.77 19.45 L24.59 21.50 L21.50 24.59 L19.45 22.77 L18.35 23.23 L18.19 25.96 L13.81 25.96 L13.65 23.23 L12.55 22.77 L10.50 24.59 L7.41 21.50 L9.23 19.45 L8.77 18.35 L6.04 18.19 L6.04 13.81 L8.77 13.65 L9.23 12.55 L7.41 10.50 L10.50 7.41 L12.55 9.23 L13.65 8.77 L13.81 6.04 L18.19 6.04 L18.35 8.77 L19.45 9.23 L21.50 7.41 L24.59 10.50 L22.77 12.55 Z M20.20 16 A4.2 4.2 0 1 0 11.80 16 A4.2 4.2 0 1 0 20.20 16 Z"/><circle cx="16" cy="16" r="2.2" fill="#f5c400"/></svg><span class="brand-text"><span class="brand-ja">キャンパスギア</span><span class="brand-en">CAMPUS GEAR</span></span></a>
+      <nav class="footer-cats" aria-label="カテゴリ"><a href="?cat=PC選び">PC選び</a><a href="?cat=Mac">Mac</a><a href="?cat=PCトラブル">PCトラブル</a><a href="?cat=ガジェット">ガジェット</a><a href="?cat=デザイン">デザイン</a><a href="?cat=大学生活">大学生活</a><a href="about.html">このブログについて</a></nav>
+    </div>
     <p>記事内のリンクには広告（アフィリエイトリンク）が含まれることがあります。</p>
-    <p><a href="about.html">このブログについて・プライバシーポリシー</a></p>
     <p>&copy; 2026 キャンパスギア</p>
   </div>
 </footer>
+<script>
+(function(){
+var list=document.querySelectorAll('.post-list li'),chips=document.querySelectorAll('.chip'),
+    q=document.getElementById('q'),empty=document.querySelector('.empty'),count=document.querySelector('.result-count');
+var cat=new URLSearchParams(location.search).get('cat')||'';
+function apply(){
+  var t=q.value.trim().toLowerCase(),n=0;
+  list.forEach(function(li){var ok=(!cat||li.dataset.cat===cat)&&(!t||li.dataset.text.indexOf(t)>-1);li.hidden=!ok;if(ok)n++;});
+  chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.cat===cat?'true':'false')});
+  empty.hidden=n>0; count.textContent=(cat||t)?n+'件の記事':'';
+  var u=new URL(location.href); if(cat)u.searchParams.set('cat',cat); else u.searchParams.delete('cat'); history.replaceState(null,'',u);
+}
+chips.forEach(function(c){c.addEventListener('click',function(){cat=c.dataset.cat;apply();})});
+q.addEventListener('input',apply); apply();
+})();
+</script>
 </body>
 </html>
