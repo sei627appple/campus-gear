@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Macのスクショ・PDF操作まとめ｜保存先の変更からPDFの結合・圧縮まで無料でできる | キャンパスギア</title>
-<meta name="description" content="Macでスクリーンショットを撮る方法、保存先の変更、画面収録、プレビューを使ったPDFの結合・並べ替え・書き込み・圧縮まで、追加アプリなしでできる方法を大学生向けに解説します。">
+<title>MacのプレビューでPDFの結合や圧縮はだいたいできる | キャンパスギア</title>
+<meta name="description" content="Mac標準の「プレビュー」を使ったPDFの結合、並べ替え、回転、書き込み、ファイルサイズの圧縮と、スクリーンショットの保存先の変え方や画面収録の方法をまとめました。">
 <link rel="canonical" href="https://sei627appple.github.io/campus-gear/posts/mac-screenshot-pdf.html">
-<meta property="og:title" content="Macのスクショ・PDF操作まとめ｜保存先の変更からPDFの結合・圧縮まで無料でできる">
-<meta property="og:description" content="Macでスクリーンショットを撮る方法、保存先の変更、画面収録、プレビューを使ったPDFの結合・並べ替え・書き込み・圧縮まで、追加アプリなしでできる方法を大学生向けに解説します。">
+<meta property="og:title" content="MacのプレビューでPDFの結合や圧縮はだいたいできる">
+<meta property="og:description" content="Mac標準の「プレビュー」を使ったPDFの結合、並べ替え、回転、書き込み、ファイルサイズの圧縮と、スクリーンショットの保存先の変え方や画面収録の方法をまとめました。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sei627appple.github.io/campus-gear/posts/mac-screenshot-pdf.html">
 <meta property="og:site_name" content="キャンパスギア">
@@ -18,112 +18,83 @@
 </head>
 <body>
 <header class="site-header">
-  <div class="inner">
-    <a class="logo" href="../">キャンパス<span>ギア</span><span class="tagline">大学生のPC・ガジェット・デザイン</span></a>
-    <nav><a href="../">記事一覧</a><a href="../about.html">運営者情報</a></nav>
+  <div class="wrap">
+    <a class="site-title" href="../">キャンパスギア</a>
+    <nav><a href="../">記事一覧</a><a href="../about.html">このブログについて</a></nav>
   </div>
 </header>
 
 <main>
+<div class="wrap">
 <article>
-  <span class="pr-label">本ページはプロモーションが含まれる場合があります</span>
-  <h1>Macのスクショ・PDF操作まとめ｜保存先の変更からPDFの結合・圧縮まで無料でできる</h1>
-  <div class="meta"><span class="cat">Mac</span>公開日：2026年9月30日</div>
+  <p class="pr">※この記事にはプロモーションが含まれることがあります</p>
+  <h1>MacのプレビューでPDFの結合や圧縮はだいたいできる</h1>
+  <div class="meta">2026年9月30日　Mac</div>
 
-  <p>大学では、「資料をPDFで提出」「複数のファイルを1つのPDFにまとめて提出」「ファイルサイズは○MB以内」といった指示がよくあります。</p>
-  <p>実はMacなら、<strong>追加のアプリを入れなくても、標準の「プレビュー」だけでほとんどのPDF操作ができます</strong>。スクリーンショットの便利な使い方と合わせて紹介します。</p>
+  <p>大学の課題では、「PDFで提出」「複数のファイルを1つにまとめて提出」「ファイルサイズは〇MBまで」という指示がよくあります。こういうとき、Macなら追加でアプリを入れなくても、最初から入っている「プレビュー」でほとんど対応できます。</p>
+  <p>ついでに、スクリーンショットのちょっとした設定についても書いておきます。</p>
 
-  <h2>スクリーンショットの基本</h2>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>ショートカット</th><th>撮れる範囲</th></tr></thead>
-      <tbody>
-        <tr><td>command + shift + 3</td><td>画面全体</td></tr>
-        <tr><td>command + shift + 4</td><td>ドラッグで選んだ範囲</td></tr>
-        <tr><td>command + shift + 4 → space</td><td>選んだウインドウ（影付き）</td></tr>
-        <tr><td>command + shift + 5</td><td>撮影メニュー（画面収録・タイマー・保存先の設定）</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>どのショートカットも、<strong>controlを一緒に押すとファイルを作らずにクリップボードにコピー</strong>されます。LINEやSlack、レポートにそのまま貼りたいときに便利です。</p>
-
-  <h3>スクショの保存先を変える</h3>
-  <p>初期設定ではデスクトップに保存されるので、すぐにデスクトップがスクショだらけになります。</p>
+  <h2>複数のPDFを1つにまとめる</h2>
   <ol>
-    <li><strong>command + shift + 5</strong>を押す</li>
-    <li>下に出るバーの「オプション」をクリック</li>
-    <li>「保存先」から、書類フォルダや自分で作ったフォルダを選ぶ</li>
+    <li>まとめたいPDFのうち、1つ目をプレビューで開く</li>
+    <li>メニューの「表示」から「サムネール」を選んで、左側にページの一覧を出す</li>
+    <li>2つ目のPDFファイルを、Finderからそのサムネールの中にドラッグする</li>
+    <li>「ファイル」→「PDFとして書き出す」で保存する</li>
   </ol>
-  <p>「スクショ」フォルダを作って、そこに保存するようにしておくと整理が楽です。</p>
+  <p>サムネールの並び順がそのままページの順番になります。ページはドラッグで並べ替えられるので、表紙を先頭に持ってくる、といったこともここでできます。</p>
 
-  <h3>画面収録（動画）もできる</h3>
-  <p><strong>command + shift + 5</strong>のメニューから、画面の動画も撮れます。オンライン発表の練習や、操作手順を人に説明するときに使えます。マイクの音声を入れるかどうかは「オプション」で選べます。</p>
-  <div class="box warn">
-    <div class="box-title">注意</div>
-    <p style="margin:0">オンライン授業の映像や資料を録画・撮影して共有するのは、著作権や大学のルールに反する場合があります。自分の学習用にとどめ、共有する前にルールを確認しましょう。</p>
-  </div>
+  <h2>いらないページを消す、向きを直す</h2>
+  <p>サムネールでページを選んで<kbd>delete</kbd>を押すと、そのページを削除できます。スキャンしたら横向きになっていた、というページは、選んで<kbd>command</kbd> + <kbd>R</kbd>（右に回転）か<kbd>command</kbd> + <kbd>L</kbd>（左に回転）で直せます。</p>
 
-  <h2>「プレビュー」でできるPDF操作</h2>
-  <p>PDFをダブルクリックすると開く「プレビュー」は、実はかなり高機能です。</p>
+  <h2>写真やスクショをPDFにする</h2>
+  <p>手書きのノートを写真に撮って提出するときなどに使える方法です。画像を全部選んでプレビューで開き、「ファイル」→「プリント」を選びます。左下の「PDF」から「PDFとして保存」を選ぶと、1つのPDFにまとまります。</p>
 
-  <h3>1. 複数のPDFを1つにまとめる</h3>
-  <ol>
-    <li>1つ目のPDFをプレビューで開く</li>
-    <li>メニューの「表示」→「サムネール」を選び、左側にページ一覧を出す</li>
-    <li>まとめたい2つ目のPDFファイルを、Finderからサムネールの中にドラッグ＆ドロップ</li>
-    <li>「ファイル」→「PDFとして書き出す」で保存</li>
-  </ol>
-  <p>サムネールの並び順が、そのままページの順番になります。ドラッグで並べ替えもできます。</p>
+  <h2>PDFに直接書き込む</h2>
+  <p>ツールバーにあるペンのアイコンを押すと、文字を入れたり、線を引いたり、ハイライトを付けたりできます。配られたPDFのプリントに答えを書き込んで提出するときや、資料にメモを残したいときに便利です。</p>
 
-  <h3>2. ページの削除・回転</h3>
-  <p>サムネールでページを選んで<strong>delete</strong>を押すと削除できます。横向きになってしまったページは、ページを選んで<strong>command + R</strong>（右回転）または<strong>command + L</strong>（左回転）で直せます。</p>
-
-  <h3>3. 画像をPDFにする</h3>
-  <p>写真やスクショを複数選んでプレビューで開き、「ファイル」→「プリント」→左下の「PDF」→「PDFとして保存」を選ぶと、1つのPDFにまとめられます。手書きのノートを撮影して提出するときに便利です。</p>
-
-  <h3>4. PDFに書き込む・署名する</h3>
-  <p>ツールバーのペンのアイコン（マークアップツール）を押すと、テキストの追加、図形、ハイライト、手書きの署名などを書き込めます。配布されたPDFのプリントに直接回答を書き込みたいときに使えます。</p>
-
-  <h3>5. PDFのファイルサイズを小さくする</h3>
+  <h2>ファイルサイズを小さくする</h2>
+  <p>提出フォームに容量の上限があって、PDFが大きすぎて出せない、ということがたまにあります。</p>
   <ol>
     <li>PDFをプレビューで開く</li>
     <li>「ファイル」→「書き出す」を選ぶ</li>
-    <li>「Quartzフィルタ」で「Reduce File Size（ファイルサイズを減らす）」を選んで保存</li>
+    <li>「Quartzフィルタ」で「Reduce File Size」を選んで保存する</li>
   </ol>
-  <p>画像が多いPDFは大きく小さくなりますが、画質がかなり落ちることもあります。<strong>保存後に中身を確認</strong>して、文字が読めるかチェックしましょう。元のファイルは上書きせず、別名で保存するのがおすすめです。</p>
+  <p>画像が多いPDFほど小さくなりますが、そのぶん画質もかなり落ちます。保存したら一度開いて、文字がちゃんと読めるか確認してください。元のファイルは上書きせずに、別の名前で保存しておくのがおすすめです。</p>
 
   <h2>WordやPagesの書類をPDFにする</h2>
-  <ul>
-    <li><strong>Word</strong>：「ファイル」→「名前を付けて保存」→ファイル形式で「PDF」を選ぶ</li>
-    <li><strong>Pages</strong>：「ファイル」→「書き出す」→「PDF」</li>
-    <li><strong>どのアプリでも</strong>：「プリント」→左下の「PDF」→「PDFとして保存」</li>
-  </ul>
-  <p>提出前に、PDFにしたときにレイアウトが崩れていないか、必ず開いて確認しましょう。</p>
+  <p>Wordなら「ファイル」→「名前を付けて保存」でファイル形式をPDFに、Pagesなら「ファイル」→「書き出す」→「PDF」です。どのアプリでも、「プリント」の画面の左下から「PDFとして保存」を選べばPDFにできます。</p>
+  <p>PDFにするとレイアウトが少しずれることがあるので、提出する前に開いて確認しておくと安心です。</p>
 
-  <h2>まとめ</h2>
-  <ul>
-    <li>スクショは<strong>command + shift + 4</strong>、controlを足すとコピー</li>
-    <li>保存先は<strong>command + shift + 5</strong>→「オプション」で変更</li>
-    <li>PDFの結合・並べ替え・回転・書き込み・圧縮は<strong>プレビューだけでできる</strong></li>
-  </ul>
-  <p>ほかにも作業が速くなる操作は、<a href="mac-shortcuts.html">Macの便利なショートカットキー</a>の記事で紹介しています。</p>
-  <p class="meta">※macOSのバージョンによって、メニューの名前や場所が少し異なる場合があります。</p>
+  <h2>スクリーンショットの保存先を変える</h2>
+  <p>スクショは最初の設定だとデスクトップに保存されるので、しばらく使っているとデスクトップがスクショだらけになります。</p>
+  <p><kbd>command</kbd> + <kbd>shift</kbd> + <kbd>5</kbd>を押すと画面の下にメニューが出るので、「オプション」から保存先を選べます。「スクショ」のようなフォルダを作って、そこに保存するようにしておくと後で探しやすいです。</p>
+  <p>撮るときに<kbd>control</kbd>を一緒に押すと、ファイルを作らずにコピーだけされます。資料やチャットにすぐ貼りたいときはこちらのほうが楽です。</p>
 
-  <section class="related">
-    <h2>あわせて読みたい</h2>
-    <ul>
-      <li><a href="mac-shortcuts.html">【大学生向け】Macの便利なショートカットキー25選｜レポート作成が一気に速くなる</a></li>
-      <li><a href="pc-backup-guide.html">卒論が消える前に！大学生のためのPCバックアップ方法｜Mac・Windows対応</a></li>
-      <li><a href="pc-accessories.html">大学生のノートPCと一緒に揃えたい周辺機器7選｜選び方のポイントも解説</a></li>
-    </ul>
-  </section>
+  <h2>画面を動画で録る</h2>
+  <p>同じ<kbd>command</kbd> + <kbd>shift</kbd> + <kbd>5</kbd>のメニューから、画面の録画もできます。発表の練習を録って見返したり、操作のやり方を人に説明したりするときに使えます。</p>
+  <div class="note">
+    <p>オンライン授業の映像や配布資料を録画・撮影して人に渡すのは、著作権や大学のルールに反することがあります。録るとしても、自分の勉強用にとどめておいてください。</p>
+  </div>
+
+  <p>ほかのショートカットについては、<a href="mac-shortcuts.html">Macでレポートを書くときに覚えておくと楽なショートカット</a>にまとめています。</p>
+  <p class="small">※macOSのバージョンによって、メニューの名前や場所が少し違うことがあります。</p>
 </article>
+<section class="related">
+  <p>ほかの記事</p>
+  <ul>
+    <li><a href="mac-shortcuts.html">Macでレポートを書くときに覚えておくと楽なショートカット</a></li>
+    <li><a href="pc-backup-guide.html">卒論が消えないように、パソコンのバックアップを設定しておく</a></li>
+    <li><a href="pc-accessories.html">ノートパソコンを買ったら、一緒にそろえたいもの</a></li>
+  </ul>
+</section>
+</div>
 </main>
 
 <footer class="site-footer">
-  <div class="inner">
-    <p>当サイトは、アフィリエイトプログラムを利用して商品を紹介する場合があります。</p>
-    <p><a href="../about.html">運営者情報・プライバシーポリシー</a> ／ &copy; 2026 キャンパスギア</p>
+  <div class="wrap">
+    <p>記事内のリンクには広告（アフィリエイトリンク）が含まれることがあります。</p>
+    <p><a href="../about.html">このブログについて・プライバシーポリシー</a></p>
+    <p>&copy; 2026 キャンパスギア</p>
   </div>
 </footer>
 </body>
