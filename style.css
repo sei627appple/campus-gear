@@ -1,0 +1,121 @@
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --muted: #5b636e;
+  --line: #e3e3de;
+  --accent: #2f6fed;
+  --accent-soft: #eaf1ff;
+  --warn-soft: #fff6e0;
+  --warn: #9a6700;
+  --radius: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a;
+    --surface: #1d2024;
+    --text: #e6e8eb;
+    --muted: #9aa3ad;
+    --line: #2e3238;
+    --accent: #7aa7ff;
+    --accent-soft: #1d2a45;
+    --warn-soft: #3a2f14;
+    --warn: #e3b341;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+a { color: var(--accent); }
+img { max-width: 100%; height: auto; }
+
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+.site-header .inner, .site-footer .inner, main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.site-header .inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap;
+}
+.logo { font-weight: 700; font-size: 20px; color: var(--text); text-decoration: none; }
+.logo span { color: var(--accent); }
+.logo .tagline { font-size: 12px; color: var(--muted); display: block; line-height: 1.4; font-weight: 400; }
+nav a { color: var(--muted); text-decoration: none; font-size: 14px; margin-left: 16px; }
+nav a:first-child { margin-left: 0; }
+nav a:hover { color: var(--accent); }
+
+main { padding-top: 32px; padding-bottom: 48px; }
+
+article, .card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+}
+@media (max-width: 600px) { article, .card { padding: 22px 16px; } }
+
+.pr-label {
+  display: inline-block; font-size: 12px; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 4px; padding: 0 6px; margin-bottom: 12px;
+}
+h1 { font-size: 26px; line-height: 1.5; margin: 0 0 12px; }
+@media (max-width: 600px) { h1 { font-size: 22px; } }
+.meta { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+h2 {
+  font-size: 21px; line-height: 1.5; margin: 48px 0 16px;
+  padding-bottom: 8px; border-bottom: 2px solid var(--accent);
+}
+h3 { font-size: 18px; margin: 32px 0 8px; padding-left: 10px; border-left: 4px solid var(--accent); line-height: 1.5; }
+p { margin: 0 0 1.2em; }
+ul, ol { padding-left: 1.4em; margin: 0 0 1.2em; }
+li { margin-bottom: 4px; }
+
+.box {
+  background: var(--accent-soft); border-radius: var(--radius);
+  padding: 18px 20px; margin: 24px 0;
+}
+.box .box-title { font-weight: 700; margin-bottom: 6px; }
+.box ul { margin-bottom: 0; }
+.box.warn { background: var(--warn-soft); }
+.box.warn .box-title { color: var(--warn); }
+
+.toc { border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; margin: 24px 0; }
+.toc .box-title { font-weight: 700; margin-bottom: 4px; }
+.toc ol { margin: 0; }
+.toc a { text-decoration: none; }
+
+.table-wrap { overflow-x: auto; margin: 20px 0 24px; }
+table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: var(--accent-soft); white-space: nowrap; }
+
+.checklist { list-style: none; padding-left: 0; }
+.checklist li::before { content: "☐ "; color: var(--accent); }
+
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { margin-bottom: 16px; }
+.post-list a { display: block; text-decoration: none; color: var(--text); }
+.post-list .card:hover { border-color: var(--accent); }
+.post-list .title { font-weight: 700; font-size: 18px; line-height: 1.5; margin-bottom: 6px; }
+.post-list .excerpt { color: var(--muted); font-size: 14px; margin: 0; }
+.section-title { font-size: 15px; color: var(--muted); margin: 0 0 12px; font-weight: 700; }
+.hero { margin-bottom: 28px; }
+.hero h1 { margin-bottom: 4px; }
+.hero p { color: var(--muted); margin: 0; }
+
+.site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.site-footer .inner { padding-top: 20px; padding-bottom: 28px; }
+.site-footer a { color: var(--muted); }
