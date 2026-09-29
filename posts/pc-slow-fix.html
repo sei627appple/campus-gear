@@ -6,6 +6,8 @@
 <title>パソコンが急に重くなったとき、まず試すこと | キャンパスギア</title>
 <meta name="description" content="パソコンが重い、遅いと感じたときに、MacとWindowsでお金をかけずに試せる対処法をまとめました。再起動、重いアプリの確認、ブラウザのタブ、ストレージの空き容量、起動時のアプリ、アップデートなど。">
 <link rel="canonical" href="https://sei627appple.github.io/campus-gear/posts/pc-slow-fix.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="パソコンが急に重くなったとき、まず試すこと">
 <meta property="og:description" content="パソコンが重い、遅いと感じたときに、MacとWindowsでお金をかけずに試せる対処法をまとめました。再起動、重いアプリの確認、ブラウザのタブ、ストレージの空き容量、起動時のアプリ、アップデートなど。">
 <meta property="og:type" content="article">
@@ -17,59 +19,76 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<a class="skip" href="#main">本文へスキップ</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="../">キャンパスギア</a>
-    <nav><a href="../">記事一覧</a><a href="../about.html">このブログについて</a></nav>
+    <a class="brand" href="../" aria-label="キャンパスギア トップへ"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#161616"/><path fill="#fff" fill-rule="evenodd" d="M23.23 13.65 L25.96 13.81 L25.96 18.19 L23.23 18.35 L22.77 19.45 L24.59 21.50 L21.50 24.59 L19.45 22.77 L18.35 23.23 L18.19 25.96 L13.81 25.96 L13.65 23.23 L12.55 22.77 L10.50 24.59 L7.41 21.50 L9.23 19.45 L8.77 18.35 L6.04 18.19 L6.04 13.81 L8.77 13.65 L9.23 12.55 L7.41 10.50 L10.50 7.41 L12.55 9.23 L13.65 8.77 L13.81 6.04 L18.19 6.04 L18.35 8.77 L19.45 9.23 L21.50 7.41 L24.59 10.50 L22.77 12.55 Z M20.20 16 A4.2 4.2 0 1 0 11.80 16 A4.2 4.2 0 1 0 20.20 16 Z"/><circle cx="16" cy="16" r="2.2" fill="#f5c400"/></svg><span class="brand-text"><span class="brand-ja">キャンパスギア</span><span class="brand-en">CAMPUS GEAR</span></span></a>
+    <nav class="site-nav" aria-label="メインメニュー"><a class="nav-home" href="../">記事一覧</a><a href="../about.html">このブログについて</a></nav>
   </div>
 </header>
 
-<main>
+<main id="main">
 <div class="wrap">
 <article>
+  <nav class="crumbs" aria-label="現在地"><a href="../">ホーム</a><span>›</span><a href="../?cat=PCトラブル">PCトラブル</a></nav>
   <p class="pr">※この記事にはプロモーションが含まれることがあります</p>
   <h1>パソコンが急に重くなったとき、まず試すこと</h1>
-  <div class="meta">2026年9月30日　PCトラブル</div>
-
+  <div class="article-meta"><span class="tag">PCトラブル</span><time datetime="2026-09-30">2026年9月30日</time><span>約4分で読めます</span></div>
+  <details class="toc" open>
+    <summary>目次</summary>
+    <ol>
+      <li><a href="#s1">1. まずは再起動する</a></li>
+      <li><a href="#s2">2. 重くしているアプリを探す</a></li>
+      <li><a href="#s3">3. ブラウザのタブを減らす</a></li>
+      <li><a href="#s4">4. ストレージの空きを作る</a></li>
+      <li><a href="#s5">5. 起動時に勝手に立ち上がるアプリを減らす</a></li>
+      <li><a href="#s6">6. OSとアプリをアップデートする</a></li>
+      <li><a href="#s7">それでも重いとき</a></li>
+    </ol>
+  </details>
+  <div class="body">
   <p>締め切り直前に限ってパソコンが重くなる、というのはよくある話です。買い替えを考える前に、お金をかけずに試せることがいくつかあるので、上から順番にやってみてください。</p>
 
-  <h2>1. まずは再起動する</h2>
+  <h2 id="s1">1. まずは再起動する</h2>
   <p>当たり前のようですが、これで直ることがいちばん多いです。スリープだけで何日も使い続けていると、裏で動いている処理がたまって重くなることがあります。</p>
   <p>Macならアップルメニューから「再起動」、Windowsならスタートの電源ボタンから「再起動」です。Windowsは「シャットダウン」より「再起動」のほうがしっかりリセットされます。作業中のファイルは先に保存しておいてください。</p>
 
-  <h2>2. 重くしているアプリを探す</h2>
+  <h2 id="s2">2. 重くしているアプリを探す</h2>
   <p>再起動しても重いときは、何が負担になっているのかを見てみます。</p>
   <p>Macの場合は、<kbd>command</kbd> + <kbd>Space</kbd>で「アクティビティモニタ」と入力して開きます。「CPU」や「メモリ」のタブで上のほうに出てくるのが、負担の大きいアプリです。「メモリ」タブの下にある「メモリプレッシャー」が黄色や赤になっていたら、メモリが足りていないサインです。</p>
   <p>Windowsの場合は、<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd>でタスクマネージャーを開きます。「プロセス」の画面で、CPUやメモリの使用率が高いアプリを確認できます。</p>
   <p>使っていないアプリなら終了してしまって大丈夫です。ただ、名前を見てもよくわからないシステムの処理は、止めるとパソコンが不安定になることがあるので触らないほうが安全です。終了するのは、自分で開いたアプリだけにしておきましょう。</p>
 
-  <h2>3. ブラウザのタブを減らす</h2>
+  <h2 id="s3">3. ブラウザのタブを減らす</h2>
   <p>意外と多いのが、ブラウザが原因のパターンです。タブを何十個も開いていると、それだけでかなりのメモリを使います。</p>
   <p>後で読みたいページはブックマークやリーディングリストに入れて、タブは閉じてしまいましょう。使っていない拡張機能を消すのも効果があります。ChromeやEdgeには、しばらく見ていないタブのメモリを自動で空けてくれる省メモリの機能もあるので、オンにしておくといいと思います。</p>
 
-  <h2>4. ストレージの空きを作る</h2>
+  <h2 id="s4">4. ストレージの空きを作る</h2>
   <p>ストレージ（SSD）の空きが少なくなると、動作が遅くなったり、アップデートができなくなったりします。全体の1〜2割くらいは空けておくのが目安です。</p>
   <p>Macは「システム設定」→「一般」→「ストレージ」、Windowsは「設定」→「システム」→「ストレージ」で、何が容量を使っているのか確認できます。Windowsの「ストレージセンサー」をオンにすると、一時ファイルなどを自動で消してくれます。</p>
   <p>容量を食いやすいのは、動画、写真、ダウンロードフォルダ、使っていないアプリあたりです。大きなファイルはクラウドや外付けのSSDに移しておくとすっきりします。クラウドの使い分けは<a href="cloud-storage-guide.html">別の記事</a>に書きました。</p>
 
-  <h2>5. 起動時に勝手に立ち上がるアプリを減らす</h2>
+  <h2 id="s5">5. 起動時に勝手に立ち上がるアプリを減らす</h2>
   <p>電源を入れたときに自動で起動するアプリが多いと、起動が遅くなるうえに、裏でずっと動き続けます。</p>
   <p>Macは「システム設定」→「一般」→「ログイン項目」、Windowsはタスクマネージャーの「スタートアップ アプリ」から、いらないものを外せます。</p>
 
-  <h2>6. OSとアプリをアップデートする</h2>
+  <h2 id="s6">6. OSとアプリをアップデートする</h2>
   <p>アップデートで不具合が直って軽くなることもあります。セキュリティのためにも、OSやブラウザは新しくしておいたほうがいいです。</p>
   <p>ただし、大きなOSのアップデートの直後は、大学で使うソフトがまだ対応していないこともあります。試験やレポートの締め切り前は避けて、時間に余裕があるときにやるのがおすすめです。</p>
 
-  <h2>それでも重いとき</h2>
+  <h2 id="s7">それでも重いとき</h2>
   <p>ウイルス対策ソフトでスキャンしてみる（Windowsなら標準の「Windows セキュリティ」で大丈夫です）、ノートパソコンの通気口がふさがっていないか確認する、といったことも試してみてください。熱がこもると、パソコンは自分で性能を落として温度を下げようとします。</p>
   <p>ここまでやっても改善しない場合は、パソコンの性能自体が、やりたいことに追いついていない可能性もあります。買い替えを考えているなら、<a href="university-laptop-guide.html">ノートパソコン選びの記事</a>も参考にしてみてください。</p>
+  </div>
 </article>
-<section class="related">
-  <p>ほかの記事</p>
+<nav class="pager" aria-label="前後の記事"><a class="prev" href="word-report-tips.html"><span class="label">← 前の記事</span>卒論を書く前に知っておきたいWordの機能</a><a class="next" href="cloud-storage-guide.html"><span class="label">次の記事 →</span>Googleドライブ、OneDrive、iCloud。大学生はどう使い分けるか</a></nav>
+<section class="related" aria-labelledby="rel">
+  <h2 id="rel">あわせて読みたい</h2>
   <ul>
     <li><a href="pc-backup-guide.html">卒論が消えないように、パソコンのバックアップを設定しておく</a></li>
-    <li><a href="pc-accessories.html">ノートパソコンを買ったら、一緒にそろえたいもの</a></li>
-    <li><a href="student-discounts.html">学生のうちに使っておきたい無料プランと学割</a></li>
+    <li><a href="university-laptop-guide.html">大学生のノートパソコン選び、スペックはどこを見ればいいのか</a></li>
+    <li><a href="mac-shortcuts.html">Macでレポートを書くときに覚えておくと楽なショートカット</a></li>
+    <li><a href="mac-screenshot-pdf.html">MacのプレビューでPDFの結合や圧縮はだいたいできる</a></li>
   </ul>
 </section>
 </div>
@@ -77,10 +96,20 @@
 
 <footer class="site-footer">
   <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#161616"/><path fill="#fff" fill-rule="evenodd" d="M23.23 13.65 L25.96 13.81 L25.96 18.19 L23.23 18.35 L22.77 19.45 L24.59 21.50 L21.50 24.59 L19.45 22.77 L18.35 23.23 L18.19 25.96 L13.81 25.96 L13.65 23.23 L12.55 22.77 L10.50 24.59 L7.41 21.50 L9.23 19.45 L8.77 18.35 L6.04 18.19 L6.04 13.81 L8.77 13.65 L9.23 12.55 L7.41 10.50 L10.50 7.41 L12.55 9.23 L13.65 8.77 L13.81 6.04 L18.19 6.04 L18.35 8.77 L19.45 9.23 L21.50 7.41 L24.59 10.50 L22.77 12.55 Z M20.20 16 A4.2 4.2 0 1 0 11.80 16 A4.2 4.2 0 1 0 20.20 16 Z"/><circle cx="16" cy="16" r="2.2" fill="#f5c400"/></svg><span class="brand-text"><span class="brand-ja">キャンパスギア</span><span class="brand-en">CAMPUS GEAR</span></span></a>
+      <nav class="footer-cats" aria-label="カテゴリ"><a href="../?cat=PC選び">PC選び</a><a href="../?cat=Mac">Mac</a><a href="../?cat=PCトラブル">PCトラブル</a><a href="../?cat=ガジェット">ガジェット</a><a href="../?cat=デザイン">デザイン</a><a href="../?cat=大学生活">大学生活</a><a href="../about.html">このブログについて</a></nav>
+    </div>
     <p>記事内のリンクには広告（アフィリエイトリンク）が含まれることがあります。</p>
-    <p><a href="../about.html">このブログについて・プライバシーポリシー</a></p>
     <p>&copy; 2026 キャンパスギア</p>
   </div>
 </footer>
+<button class="to-top" type="button" aria-label="ページの上へ戻る"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script>
+(function(){var b=document.querySelector('.to-top');if(!b)return;
+function f(){b.classList.toggle('show',window.scrollY>600)}
+window.addEventListener('scroll',f,{passive:true});f();
+b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});})();
+</script>
 </body>
 </html>

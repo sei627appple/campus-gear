@@ -6,6 +6,8 @@
 <title>卒論が消えないように、パソコンのバックアップを設定しておく | キャンパスギア</title>
 <meta name="description" content="パソコンの故障や紛失でレポートや卒論が消えないように、バックアップの考え方と具体的な方法をまとめました。MacのTime Machine、Windowsのファイル履歴、クラウド、外付けSSDの使い方。">
 <link rel="canonical" href="https://sei627appple.github.io/campus-gear/posts/pc-backup-guide.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="卒論が消えないように、パソコンのバックアップを設定しておく">
 <meta property="og:description" content="パソコンの故障や紛失でレポートや卒論が消えないように、バックアップの考え方と具体的な方法をまとめました。MacのTime Machine、Windowsのファイル履歴、クラウド、外付けSSDの使い方。">
 <meta property="og:type" content="article">
@@ -17,32 +19,44 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+<a class="skip" href="#main">本文へスキップ</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="site-title" href="../">キャンパスギア</a>
-    <nav><a href="../">記事一覧</a><a href="../about.html">このブログについて</a></nav>
+    <a class="brand" href="../" aria-label="キャンパスギア トップへ"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#161616"/><path fill="#fff" fill-rule="evenodd" d="M23.23 13.65 L25.96 13.81 L25.96 18.19 L23.23 18.35 L22.77 19.45 L24.59 21.50 L21.50 24.59 L19.45 22.77 L18.35 23.23 L18.19 25.96 L13.81 25.96 L13.65 23.23 L12.55 22.77 L10.50 24.59 L7.41 21.50 L9.23 19.45 L8.77 18.35 L6.04 18.19 L6.04 13.81 L8.77 13.65 L9.23 12.55 L7.41 10.50 L10.50 7.41 L12.55 9.23 L13.65 8.77 L13.81 6.04 L18.19 6.04 L18.35 8.77 L19.45 9.23 L21.50 7.41 L24.59 10.50 L22.77 12.55 Z M20.20 16 A4.2 4.2 0 1 0 11.80 16 A4.2 4.2 0 1 0 20.20 16 Z"/><circle cx="16" cy="16" r="2.2" fill="#f5c400"/></svg><span class="brand-text"><span class="brand-ja">キャンパスギア</span><span class="brand-en">CAMPUS GEAR</span></span></a>
+    <nav class="site-nav" aria-label="メインメニュー"><a class="nav-home" href="../">記事一覧</a><a href="../about.html">このブログについて</a></nav>
   </div>
 </header>
 
-<main>
+<main id="main">
 <div class="wrap">
 <article>
+  <nav class="crumbs" aria-label="現在地"><a href="../">ホーム</a><span>›</span><a href="../?cat=PCトラブル">PCトラブル</a></nav>
   <p class="pr">※この記事にはプロモーションが含まれることがあります</p>
   <h1>卒論が消えないように、パソコンのバックアップを設定しておく</h1>
-  <div class="meta">2026年9月30日　PCトラブル</div>
-
+  <div class="article-meta"><span class="tag">PCトラブル</span><time datetime="2026-09-30">2026年9月30日</time><span>約4分で読めます</span></div>
+  <details class="toc" open>
+    <summary>目次</summary>
+    <ol>
+      <li><a href="#s1">考え方：パソコン以外にもう1か所</a></li>
+      <li><a href="#s2">いちばん手軽なのはクラウド</a></li>
+      <li><a href="#s3">外付けSSDにパソコンごとバックアップする</a></li>
+      <li><a href="#s4">卒論は日付を付けて保存しておく</a></li>
+      <li><a href="#s5">ちゃんと戻せるかも確かめておく</a></li>
+    </ol>
+  </details>
+  <div class="body">
   <p>提出前日にパソコンが起動しなくなった、カフェで飲み物をこぼした、電車に置き忘れた。こういうことは誰にでも急に起こります。</p>
   <p>何か月もかけて書いた卒論が消えてしまうのは、想像するだけでつらいです。バックアップは一度設定しておけば、あとはほとんど自動でやってくれるので、時間があるときに済ませておくことをおすすめします。</p>
 
-  <h2>考え方：パソコン以外にもう1か所</h2>
+  <h2 id="s1">考え方：パソコン以外にもう1か所</h2>
   <p>バックアップには「3-2-1ルール」という考え方があります。データのコピーを3つ持つ、それを2種類の場所に保存する、そのうち1つは別の場所に置く、というものです。</p>
   <p>大学生なら、パソコン本体、クラウド、外付けSSDの組み合わせがちょうどいいと思います。そこまでやらなくても、パソコンの外にもう1か所コピーがあるだけで、全部なくなる心配はかなり減ります。</p>
 
-  <h2>いちばん手軽なのはクラウド</h2>
+  <h2 id="s2">いちばん手軽なのはクラウド</h2>
   <p>作業するフォルダを、最初からOneDriveやGoogleドライブ、iCloud Driveの中に作ってしまう方法です。保存するたびに自動でクラウドにもアップロードされるので、パソコンが壊れても、別のパソコンやスマホからすぐにファイルを開けます。</p>
   <p>ただ、クラウドは「同期」なので、パソコンでファイルを消したり上書きしたりすると、クラウドのほうにも反映されます。多くのサービスには、ゴミ箱や、以前のバージョンに戻す機能があるので、いざというときはそこから戻せます。どのサービスを使うかは<a href="cloud-storage-guide.html">クラウドの使い分けの記事</a>を参考にしてください。</p>
 
-  <h2>外付けSSDにパソコンごとバックアップする</h2>
+  <h2 id="s3">外付けSSDにパソコンごとバックアップする</h2>
   <h3>Macの場合（Time Machine）</h3>
   <p>外付けのSSD（またはHDD）をMacにつないで、「システム設定」→「一般」→「Time Machine」を開き、「バックアップディスクを追加」からつないだドライブを選びます。</p>
   <p>あとは、ドライブをつないでいる間、1時間ごとに自動でバックアップしてくれます。「昨日の時点のファイルに戻したい」ということもできるので、間違えて大事な部分を消してしまったときにも役に立ちます。</p>
@@ -55,20 +69,23 @@
     <p>バックアップ用にドライブを設定すると、中身が消去されることがあります。ほかのデータが入っているドライブを使うときは、先に中身を別の場所に移しておいてください。</p>
   </div>
 
-  <h2>卒論は日付を付けて保存しておく</h2>
+  <h2 id="s4">卒論は日付を付けて保存しておく</h2>
   <p>卒論のように何か月も書き続けるファイルは、ときどき日付を付けて別名で保存しておくのもおすすめです。「卒論_20261001.docx」「卒論_20261008.docx」のような感じです。</p>
   <p>大きく書き直したあとで「やっぱり前の文章のほうがよかった」となったときにも、すぐに戻れます。週に1回など、自分でルールを決めておくと続けやすいです。</p>
 
-  <h2>ちゃんと戻せるかも確かめておく</h2>
+  <h2 id="s5">ちゃんと戻せるかも確かめておく</h2>
   <p>バックアップを取っているつもりが、実は途中で止まっていた、ということもあります。月に1回くらい、バックアップからファイルを1つ開いてみて、ちゃんと戻せるかを確かめておくと安心です。</p>
   <p>全部を一度にやるのが面倒なら、まずは今日、作業フォルダをクラウドの中に移すところから始めてみてください。それだけでも、全部消えてしまうような事態はかなり防げます。外付けSSDの選び方は<a href="pc-accessories.html">周辺機器の記事</a>に書いています。</p>
+  </div>
 </article>
-<section class="related">
-  <p>ほかの記事</p>
+<nav class="pager" aria-label="前後の記事"><a class="prev" href="pc-accessories.html"><span class="label">← 前の記事</span>ノートパソコンを買ったら、一緒にそろえたいもの</a></nav>
+<section class="related" aria-labelledby="rel">
+  <h2 id="rel">あわせて読みたい</h2>
   <ul>
     <li><a href="pc-slow-fix.html">パソコンが急に重くなったとき、まず試すこと</a></li>
-    <li><a href="pc-accessories.html">ノートパソコンを買ったら、一緒にそろえたいもの</a></li>
-    <li><a href="student-discounts.html">学生のうちに使っておきたい無料プランと学割</a></li>
+    <li><a href="university-laptop-guide.html">大学生のノートパソコン選び、スペックはどこを見ればいいのか</a></li>
+    <li><a href="mac-shortcuts.html">Macでレポートを書くときに覚えておくと楽なショートカット</a></li>
+    <li><a href="mac-screenshot-pdf.html">MacのプレビューでPDFの結合や圧縮はだいたいできる</a></li>
   </ul>
 </section>
 </div>
@@ -76,10 +93,20 @@
 
 <footer class="site-footer">
   <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#161616"/><path fill="#fff" fill-rule="evenodd" d="M23.23 13.65 L25.96 13.81 L25.96 18.19 L23.23 18.35 L22.77 19.45 L24.59 21.50 L21.50 24.59 L19.45 22.77 L18.35 23.23 L18.19 25.96 L13.81 25.96 L13.65 23.23 L12.55 22.77 L10.50 24.59 L7.41 21.50 L9.23 19.45 L8.77 18.35 L6.04 18.19 L6.04 13.81 L8.77 13.65 L9.23 12.55 L7.41 10.50 L10.50 7.41 L12.55 9.23 L13.65 8.77 L13.81 6.04 L18.19 6.04 L18.35 8.77 L19.45 9.23 L21.50 7.41 L24.59 10.50 L22.77 12.55 Z M20.20 16 A4.2 4.2 0 1 0 11.80 16 A4.2 4.2 0 1 0 20.20 16 Z"/><circle cx="16" cy="16" r="2.2" fill="#f5c400"/></svg><span class="brand-text"><span class="brand-ja">キャンパスギア</span><span class="brand-en">CAMPUS GEAR</span></span></a>
+      <nav class="footer-cats" aria-label="カテゴリ"><a href="../?cat=PC選び">PC選び</a><a href="../?cat=Mac">Mac</a><a href="../?cat=PCトラブル">PCトラブル</a><a href="../?cat=ガジェット">ガジェット</a><a href="../?cat=デザイン">デザイン</a><a href="../?cat=大学生活">大学生活</a><a href="../about.html">このブログについて</a></nav>
+    </div>
     <p>記事内のリンクには広告（アフィリエイトリンク）が含まれることがあります。</p>
-    <p><a href="../about.html">このブログについて・プライバシーポリシー</a></p>
     <p>&copy; 2026 キャンパスギア</p>
   </div>
 </footer>
+<button class="to-top" type="button" aria-label="ページの上へ戻る"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<script>
+(function(){var b=document.querySelector('.to-top');if(!b)return;
+function f(){b.classList.toggle('show',window.scrollY>600)}
+window.addEventListener('scroll',f,{passive:true});f();
+b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});})();
+</script>
 </body>
 </html>
